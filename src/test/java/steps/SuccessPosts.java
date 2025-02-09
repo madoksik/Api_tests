@@ -1,24 +1,40 @@
 package steps;
 
 public class SuccessPosts {
-    private Integer userId;
-    private String title;
-    private String body;
-    private Integer id;
+    private static Integer userId;
+    private static String title;
+    private static String body;
+    private static Integer id;
 
-    public Integer getUserId() {
+    public static Integer getuserId() {
         return userId;
     }
 
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
-    public String getBody() {
+    public static String getBody() {
         return body;
     }
 
-    public Integer getId() {
+    public static Integer getId() {
         return id;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
