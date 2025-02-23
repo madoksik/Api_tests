@@ -1,33 +1,29 @@
 package steps;
 
 public class PostsData {
-    private Integer userId;
-    private Integer id;
-    private String title;
-    private String body;
+    private static Integer userId;
+    private static String title;
+    private static String body;
+    private static Integer id;
 
-       public Integer getUserId() {
+    public static Integer getUserId() {
         return userId;
     }
 
-    public Integer getId() {
-        return id;
-    }
-
-    public String getTitle() {
+    public static String getTitle() {
         return title;
     }
 
-    public String getBody() {
+    public static String getBody() {
         return body;
+    }
+
+    public static Integer getId() {
+        return id;
     }
 
     public void setUserId(Integer userId) {
         this.userId = userId;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public void setTitle(String title) {
@@ -36,5 +32,9 @@ public class PostsData {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

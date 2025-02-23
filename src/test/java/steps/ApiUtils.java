@@ -17,9 +17,8 @@ public class ApiUtils {
                 .get(baseUrl + params);
         return response;
     }
-
-    //возвращает тело ответа как лист
-    public static <T> List<T> parseResponse(Response resp, Class<T> clazz) {
+   //возвращает тело ответа как лист
+        public static <T> List<T> parseResponse(Response resp, Class<T> clazz) {
         return resp.body().jsonPath().getList(".", clazz);
     }
 
@@ -41,7 +40,8 @@ public class ApiUtils {
                 .post(baseUrl + "/posts");
         return response2;
     }
-    //возвращает тело ответа SuccessPosts
+
+      //возвращает тело ответа SuccessPosts
     public static SuccessPosts successPostsResponse(Response resp) {
         return resp.body().as(SuccessPosts.class);
     }

@@ -14,7 +14,7 @@ public class UsersData {
     private Company company;
 
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -77,4 +77,6 @@ public class UsersData {
     public void setCompany(Company company) {
         this.company = company;
     }
+
+
 }
